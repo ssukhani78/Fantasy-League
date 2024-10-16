@@ -1,0 +1,88 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    height: 120vh;
+}
+
+/* Header */
+#mainHead {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/* Form Section */
+.form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#teamNames {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.teamName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 12rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+#name1,#name2{
+    font-weight: 800;
+    padding-left: 1rem;
+}
+
+/* Button */
+#tossBtn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 22px;
+    background-color: #f0c040;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#tossBtn:hover {
+    background-color: #e5a631;
+}
+
+#showTossWin {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.2rem;
+    font-size: 1.2rem;
+}
+
+
+#showTossWin{
+    color: rgb(70, 186, 70);
+}
+
+@media(max-width : 687px) {
+    #teamNames{
+        flex-wrap: wrap;
+        row-gap: 2.5rem;
+    }
+}

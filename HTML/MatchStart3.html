@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Start</title>
+  <link rel="stylesheet" href="../CSS/MatchStart3.css" />
+</head>
+
+<body>
+  <header>
+    <h3></h3>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="Main" id="TeamADetail">
+        <div class="teamInfoArea">
+          <div class="TeamHeading">
+            <h3></h3>
+            <hr />
+          </div>
+          <ul id="ListA"></ul>
+        </div>
+        
+        <div class="ScoreAndPoints">
+          <div class="score">
+            <b>Your Score :- <span id="run">0</span>/<span id="wicket">0</span> 
+            </b>
+          </div>
+          <div class="points">
+           <b>Fantasy Points :- 0</b>
+          </div>
+        </div>
+      </div>
+
+      <div id="showInfo">
+        
+        <div id="battingInfo">
+          <hr style="margin-top: 0.4rem;">
+          <div class="header">Batting Team :- 
+            <hr>
+          </div>
+
+          <div class="info" >
+            <table border="2px solid black" id="BatsmanTable">
+              <thead>
+                <th>Batsman Name </th>
+                <th>Runs</th>
+                <th>Ball Played </th>
+              </thead>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="bowlingInfo">
+          <hr />
+          <div class="header">Bowling Team :- 
+            <hr>
+          </div>
+          <div class="info" >
+            <table border="2px solid black" id="BowlerTable">
+              <thead>
+                <th>Bowler Name </th>
+                <th>Run</th>
+                <th>Wicket</th>
+              </thead>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="ScoreBoard">
+          <hr>
+          <div class="header">Score Board :-
+            <hr>
+
+            <div class="currentOver_runs">
+              
+            </div>
+            
+            <div id="OverShow">
+                <div class="show">Current Over :- 0.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Main" id="TeamBDetail">
+        <div  class="teamInfoArea">
+          <div class="TeamHeading">
+            <h3></h3>
+            <hr />
+          </div>
+          <ul id="ListB"></ul>
+        </div>
+
+        <div class="ScoreAndPoints">
+          <div class="score">
+            <b>Your Score :- <span id="run">0</span>/<span id="wicket">0</span></b>
+          </div>
+          <div class="points">
+           <b>Fantasy Points :- 0</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="HitButtonArea">
+      <button id="hitBtn" disabled>Start Match</button>
+
+      <div class="message">
+        
+      </div>
+    </div>
+
+   
+      <div id="ShowTimer">
+          <ul>
+            
+          </ul>
+      </div>
+  </main>
+  <script src="../JS/MatchStart3.js"></script>
+</body>
+</html>

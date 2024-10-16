@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Selection</title>
+  <link rel="stylesheet" href="../CSS/TeamSelection2.css" />
+</head>
+
+<body>
+  <header>
+    <h3 id="TeamSelectheading">Itz Time To Select The Team</h3>
+    <hr />
+  </header>
+
+  <main>
+    <div id="TossWinnerInfo"></div>
+
+    <div id="TeamList">
+      <div class="Listing">
+        <div class="head">
+          <h4>Batsman List</h4>
+          <hr />
+        </div>
+        <ul id="batterList" class="dataofplayer"></ul>
+      </div>
+
+      <div class="Listing">
+        <div class="head">
+          <h4>Bowlers List</h4>
+          <hr />
+        </div>
+        <ul id="bowlerList" class="dataofplayer"></ul>
+      </div>
+
+      <div class="Listing">
+        <div class="head">
+          <h4>Wicketkeeper List</h4>
+          <hr />
+        </div>
+
+        <ul id="WKList" class="dataofplayer"></ul>
+      </div>
+    </div>
+
+
+
+    <div class="SelectionArea">
+      <div id="teamA_selection" class="TeamSelection">
+        <div class="header">
+          <h4></h4>
+          <hr />
+        </div>
+        <ul id="TeamA"></ul>
+      </div>
+      
+      
+      <div class="showInfo">
+        <span id="success"></span>
+        <span id="Note"></span>
+        <span id="totCredit">Total Credit :- </span>
+        <span id="remCredit">Remaining Credit :- </span>
+        <span id="selectedBatter">Selected Batters :- </span>
+        <span id="selectedBowler">Selected Bowlers :- </span>
+        <span id="selectedWk">Selected Wicketkeeper :- </span>
+        <span id="totPlay">Total Players :- </span>
+    </div>
+
+      <div id="teamB_selection" class="TeamSelection">
+        <div class="header">
+          <h4></h4>
+          <hr />
+        </div>
+        <ul id="TeamB"></ul>
+      </div>
+    </div>
+
+    <div class="DropDown">
+
+      <div id="DropDownsA" class="DropDowns">
+        <div>
+          Captain :- <select name="" id="captainA">
+            <option value="Select Captain" selected disabled>Select Captain</option>
+          </select>
+        </div>
+        <div>
+          Vice-Captain :- <select name="" id="Vice-CaptainA">
+            <option value="Select Vice-Captain" selected disabled>Select Vice-Captain</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div id="DropDownsB" class="DropDowns">
+          <div>
+            Captain :- <select name="" id="captainB">
+              <option value="Select Captain" selected disabled>Select Captain</option>
+            </select>
+          </div>
+          <div>
+            Vice-Captain :- <select name="" id="Vice-CaptainB">
+              <option value="Select Vice-Captain" selected disabled>Select Vice-Captain</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="TeamAbtn">Make Team</button>
+      <button id="TeamBbtn">Make Team</button>
+    </div>
+
+    <div class="startGame">
+      <span id="GameStartMess"></span>
+      <button id="startMatchBtn">Start Match</button>
+    </div>
+
+  </main>
+  <script type="module" src="../JS/TeamSelection2.js"></script>
+</body>
+</html>

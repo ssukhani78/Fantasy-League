@@ -1,0 +1,314 @@
+/* Styling of Team Selection Page */
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    /* width: 100vw; */
+    height: 120vh;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+main{
+    height: 120vh;
+    background-color: aliceblue;
+}
+#TeamSelectheading{
+    text-align: center;
+}
+
+#TeamList{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    /* border: 2px solid black; */
+    height: 28vh;
+    column-gap: 1rem;
+}
+
+.Listing{
+    align-items: center;
+    height: 100%;
+    border: 2px solid black;
+    width: 30vw;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #484646;
+}
+
+.Listing .head{
+    position:sticky;
+    top: 0px;
+    padding-bottom: 0.6rem;
+    z-index: 100;
+    background-color: #1a52e3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding-top: 0.3rem;
+}
+
+.Listing .head hr{
+    border: 1px solid white;
+}
+
+.Listing h4{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.Listing ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0.2rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.dataofplayer li{
+    text-align: center;
+    background-color: #e0e0e0;
+    margin-bottom: 0.4rem;
+    padding: 2%;
+    width: 94%;
+    cursor: pointer;
+    /* padding-bottom: 0.4rem; */
+}
+
+.dataofplayer li:hover{
+    background-color: #d1d1d1;; /* Changed the background color for hover */
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+#TossWinnerInfo{
+    text-align: center;
+    color: green;
+    margin-top: 1.2rem;
+}
+
+.hide{
+    opacity:0;
+}
+
+.SelectionArea{
+    display: flex;
+    /* gap: 2px; */
+    width: 95vw;
+    height: 50vh;
+    /* background-color: blue; */
+    margin-top: 3rem;   
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    /* column-gap: 3rem; */
+}
+
+.SelectionArea .header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(235, 217, 131);
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.showInfo{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 38vh;
+    align-items: center;
+    row-gap: 0.3rem;
+    margin-top: 0.4rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14%;
+    /* color: ; */
+    width: 20vw;
+}
+
+.showInfo #Note{
+    font-weight: 800;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 0.6rem;
+    background-color: rgb(116, 2, 60);
+    border-radius: 8rem;
+    margin-bottom: 0.5rem;
+}
+
+.showInfo #remCredit{
+    color: red;
+}
+
+.showInfo #success{
+    color: green;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    /* padding-top: 0.2rem; */
+    padding-bottom: 0.2rem;
+}
+
+.showInfo #totCredit{
+    color: green;
+}
+
+.TeamSelection{
+    border: 5px solid black;
+    height: 100%;
+    width: 20%;
+    scrollbar-width: thin;
+    overflow-x: scroll;
+    scrollbar-color: black;
+    /* padding-top: 0.4rem; */
+}
+
+.TeamSelection h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #1900ff;
+    z-index: 100;
+}
+
+.TeamSelection ul{
+   list-style: none;
+   margin: 0;
+   margin-top: 1rem;
+   text-align: center;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.TeamSelection ul li{
+    text-align: center;
+    background-color: #e0e0e0;;
+    margin-bottom: 0.4rem;
+    margin-left: 0px;
+    padding: 2%;
+    width: 87%;
+    cursor: pointer;
+}
+
+.TeamSelection ul li:hover{
+    background-color: #d1d1d1;; /* Changed the background color for hover */
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+
+/* DropDown */
+.DropDown{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.DropDowns{
+    display: flex;
+    /* border: 2px solid black; */
+    /* width: 35vw; */
+    /* justify-content: left; */
+    align-items: center;
+    column-gap: 0.77rem;
+    margin-top: 1rem;
+    /* border: 2px solid red; */
+}
+
+#DropDownsA{
+    margin-left: 1rem;
+}
+
+#DropDownsB{
+    margin-right: 2rem;
+}
+
+
+/*Buttons */
+.buttons{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 3rem;
+    /* justify-content: space; */
+    position: relative;
+    align-items: center;
+    /* column-gap: 40rem; */
+    margin-top: 0.9rem;
+}
+
+#TeamAbtn{
+    position: absolute;
+    left: 10rem;
+}
+#TeamBbtn{
+    position: absolute;
+    right: 13rem;
+}
+
+#TeamAbtn,#TeamBbtn{
+    background-color: #1a52e3;
+    color: white;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 0.7rem;
+    border-radius: 20rem;
+}
+
+#TeamAbtn:hover,#TeamBbtn:hover{
+    background-color: #436edb;
+    /* color: black; */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.startGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+}
+
+#startMatchBtn{
+    text-align: center;
+    /* background-color: rgb(235, 217, 131); */
+    background-color: rgb(116, 2, 60);
+    color: white;
+    font-weight: 700;
+    border: 2px solid black;
+    /* padding: 0.7rem; */
+    border-radius: 0.9rem;
+    width: 14vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+#startMatchBtn:hover{
+    background-color: rgba(99, 18, 60, 0.886);
+}
+
+#GameStartMess{
+    color: Green;
+    font-weight: 800;
+    font-size: 30px;
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+#final-Winner {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #038101;
+}
+
+.final-scores {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15px 0;
+}
+
+.final-score {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.table-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2928f8;
+    color: white;
+}
+
+caption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.TeamName{
+    color: darkred;
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-section {
+        width: 100%;
+    }
+
+    .final-scores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final-score {
+        margin-bottom: 10px;
+    }
+}
